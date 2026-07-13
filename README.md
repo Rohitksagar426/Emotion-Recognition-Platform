@@ -155,9 +155,7 @@ FER2013
 
 ---
 
-## 📈 Results
 
-(Add your screenshots here.)
 
 ### Home Page
 
@@ -167,7 +165,8 @@ FER2013
 
 ### Webcam Prediction
 
-![Webcam](assets/webcam_demo.png)
+![Uploading image.png…]()
+
 
 ---
 
@@ -246,8 +245,8 @@ preprocessed_images/
 
 **Rohit Kshirsagar**
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
+- GitHub: https://github.com/Rohitksagar426
+- LinkedIn: https://linkedin.com/in/rohit-kshirsagar-330643256/
 
 ---
 
