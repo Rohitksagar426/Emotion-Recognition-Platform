@@ -1,0 +1,60 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled Python extensions
+*.so
+
+# Virtual Environments
+emotion_rec_env/
+facenet_env/
+venv/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Cache
+.cache/
+.pytest_cache/
+
+# Dataset
+preprocessed_images/
+original_images/
+
+# Temporary Files
+*.tmp
+*.bak
+
+# Environment Variables
+.env
+.env.*
+
+# Python Distribution
+build/
+dist/
+*.egg-info/
+
+# Miscellaneous
+*.swp
+*.swo
