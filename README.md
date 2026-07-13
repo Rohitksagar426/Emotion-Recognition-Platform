@@ -245,8 +245,8 @@ preprocessed_images/
 
 **Rohit Kshirsagar**
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
+- GitHub: https://github.com/Rohitksagar426
+- LinkedIn: https://linkedin.com/in/rohit-kshirsagar-330643256/
 
 ---
 
