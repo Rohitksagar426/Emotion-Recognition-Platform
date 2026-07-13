@@ -155,9 +155,7 @@ FER2013
 
 ---
 
-## 📈 Results
 
-(Add your screenshots here.)
 
 ### Home Page
 
@@ -167,7 +165,8 @@ FER2013
 
 ### Webcam Prediction
 
-![Webcam](assets/webcam_demo.png)
+![Uploading image.png…]()
+
 
 ---
 
