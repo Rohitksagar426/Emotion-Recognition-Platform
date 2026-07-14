@@ -19,6 +19,13 @@ import streamlit as st
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from pathlib import Path
+
+st.write("OpenCV Version:", getattr(cv2, "__version__", "No version"))
+st.write("cv2 file:", getattr(cv2, "__file__", "No file"))
+st.write("Has CascadeClassifier:", hasattr(cv2, "CascadeClassifier"))
+st.write("Has data:", hasattr(cv2, "data"))
+st.write("dir(cv2) first 30:", dir(cv2)[:30])
 
 # ==============================================================================
 # PAGE CONFIG
@@ -279,8 +286,22 @@ def load_model(model_path: str):
 
 @st.cache_resource(show_spinner="Loading face detector...")
 def load_face_cascade():
-    path = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
-    return cv2.CascadeClassifier(path)
+    BASE_DIR = Path(__file__).parent
+
+    cascade_path = (
+        BASE_DIR
+        / "haarcascades"
+        / "haarcascade_frontalface_default.xml"
+    )
+
+    face_cascade = cv2.CascadeClassifier(str(cascade_path))
+
+    if face_cascade.empty():
+        raise RuntimeError(
+            f"Failed to load Haar Cascade from {cascade_path}"
+        )
+
+    return face_cascade
 
 
 def preprocess_face(face_gray: np.ndarray) -> torch.Tensor:
