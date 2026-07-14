@@ -26,6 +26,7 @@ st.write("cv2 file:", getattr(cv2, "__file__", "No file"))
 st.write("Has CascadeClassifier:", hasattr(cv2, "CascadeClassifier"))
 st.write("Has data:", hasattr(cv2, "data"))
 st.write("dir(cv2) first 30:", dir(cv2)[:30])
+st.write(cv2.__path__)
 
 # ==============================================================================
 # PAGE CONFIG
